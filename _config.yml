@@ -1,43 +1,5 @@
-# Site settings
-# General settings
-lang: en #Site language
 title: Battleships - An Epistemic Logic Representation #Site title
-email: c.f.catalin.flaviu@student.rug.nl & k.furusawa@student.rug.nl  #Site author email
-author: Catalin Flaviu Berki & Kenichi Furusawa #Site author name
 description: "An epistemic representation of the Battleships game" #Site common description
-keywords: "epistemic logic" #Site common keywords
-# URL settings
-baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://kaeru4343.github.io/LAMAS_2020Project/" # the base hostname & protocol for your site
 home-repo: "https://github.com/kaeru4343/LAMAS_2020Project" #Site repository
-# Default src
-#start_img: "static/images/bg/start.jpg" #Image for the first screen of the page or post
-#end_img: "static/images/bg/end.jpg" #Image for the last screen of the page or post
-#thumb_img: "static/images/pic.jpg"  #Image for the post preview
-# disqus-code: # Disqus comments code
-# Build settings
-markdown: kramdown
-permalink: /:year/:month/:day/:title/ # Post permalink pattern
-paginate: 3 # Post count per page in pagination mode
-paginate_path: "page-:num/" # Post pagination pattern
-exclude: [
-'node_modules',
-'bower_components',
-'Gruntfile.js',
-'package.json',
-'bower.json',
-'README.md',
-'Rakefile'
-]
-source: _build # Jekyll source folder
-destination: _deploy # Generated website folder
-# Category pages settings
-categories:
-  url: /category/
-  slug: ''
-  layout: category.html
-# Tag pages settings
-tags:
-  url: /tag/
-  slug: ''
-  layout: tag.html
+theme: jekyll-theme-cayman
