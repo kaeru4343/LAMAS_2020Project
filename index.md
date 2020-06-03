@@ -59,8 +59,4 @@ As stated before, once the positions of all 3 ships of a player become common kn
 <embed src="LAMAS_finalProject_actionModels.pdf" width="800px" height="2100px" />
 
 # Discussion
-
-
-
-
-
+The idea of modelling the game of Battleships can lead to a multitude of avenues for future research. An example of this would be analyzing the game, but from a game theory point of view, focusing on potential ways of optimization gameplay. Another avenue of research would be attempting to model a well-known, harder version of the game known as "Salvo Battleships". In that version of the game, each turn each player attacks a number of slots equal to their number of unsunk ships in a "salvo" instead of attacking one slot at a time. The oponent will only tell them how many out of those attacks were hits and leaves it to them to piece the rest of the information together. Of course, the players still need to anounce when a ship was sunk. Obviously, this would be significantly harder to model and could lead to interesting behaviours in and of itself. Alternatively, future researchers could attempt to make additional rules, for example, ships could only be placed vertically, or remove rules, for example, they could remove the announcement of a hit, but keep the announcement of a ship sinking, which could result in interesting behaviour once more.
