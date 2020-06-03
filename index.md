@@ -56,6 +56,8 @@ As stated before, once the positions of all 3 ships of a player become common kn
 
 # Example of an Epistemic Logic Playthrough
 
+<embed src="LAMAS_finalProject_actionModels.pdf" width="800px" height="2100px" />
+
 # Discussion
 
 
