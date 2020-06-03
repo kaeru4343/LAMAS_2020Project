@@ -3,16 +3,14 @@ layout: default
 title: "Battleships - An Epistemic Logic Representation"
 ---
 
-# Battleships - An Epistemic Logic Representation
-
-## Introduction
+# Introduction
 
 Battleships is a strategy type guessing game for two players that originally came out as pen and paper game in the 1930s and, later, in 1973, as a plastic board game.
 
 The game created a multitude of spin-offs in various formats, including electronic versions, video games and even phone apps. Every version generally respects the core idea of the game, but will sometimes deviate in execution or rules.<br />
 For the sake of simplicity, we will be using the game's default rules and a abridged version of its components in our attempt to model the game in an epistemic logic system.
 
-## Rules and Components
+# Rules and Components
 
 As stated before, this is a game for two players.<br />
 Each player has a grid of 10x10 that only they can see, pegs to mark an opponent's hits and misses and a number of ships of varying lengths and 1 width.<br />
@@ -36,11 +34,11 @@ Then the other player does the same. The round ends and the next round begins. I
 The rounds keep repeating until the ships of either one of the players, or of both (as the round ends after both players have taken a shot, this is possible), have been sunk.<br />
 This concludes the rules the rules of the game.
 
-## Epistemic Logic Conversion
+# Epistemic Logic Conversion
 
-## Example of an Epistemic Logic Playthrough
+# Example of an Epistemic Logic Playthrough
 
-## Discussion
+# Discussion
 
 
 
