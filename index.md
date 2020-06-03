@@ -3,6 +3,8 @@ layout: default
 title: "Battleships - An Epistemic Logic Representation"
 ---
 
+# Battleships - An Epistemic Logic Representation
+
 ## Introduction
 
 Battleships is a strategy type guessing game for two players that originally came out as pen and paper game in the 1930s and, later, in 1973, as a plastic board game.
