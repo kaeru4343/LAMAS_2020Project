@@ -66,7 +66,7 @@ p<sub>Ship<sub>i,j</sub></sub> = t iff "All of the coordinates of ship j belongi
 
 The first preposition is used on the board, while the second is mainly used for announcements.
 
-Now that we've declared our prepositions, we have &#x2112;<sub>K</sub><sup>stat</sup>(A,P), which is a union of formula and epistemic actions.
+Now that we've declared our prepositions, we have &#x2112;<sub>KC</sub><sup>stat</sup>(A,P), which is a union of formula and epistemic actions.
 
 We also have:
 R<sub>1</sub> = (s<sub>1</sub>(x,y),s<sub>1</sub>(x,y)) for all (x,y) and (s<sub>2</sub>(x,y), z<sub>2</sub>(x,y) for all z<sub>2</sub> &isin; S and<br />
