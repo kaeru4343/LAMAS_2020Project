@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Battleships - An Epistemic Logic Representation"
+title: "Battleship - An Epistemic Logic Representation"
 ---
 
 # Introduction
 
-Battleships is a strategy type guessing game for two players that originally came out as pen and paper game in the 1930s and, later, in 1973, as a plastic board game.
+Battleship is a strategy type guessing game for two players that originally came out as pen and paper game in the 1930s and, later, in 1973, as a plastic board game.
 
 The game created a multitude of spin-offs in various formats, including electronic versions, video games and even phone apps. Every version generally respects the core idea of the game, but will sometimes deviate in execution or rules.<br />
 For the sake of simplicity, we will be using the game's default rules and a abridged version of its components in our attempt to model the game in an epistemic logic system.
@@ -50,7 +50,8 @@ In general, it is common knowledge what kinds of ships each player has and their
 
 We will translate that in epistemic as C ship<sub>i</sub>, where i is the number of the ship (i &isin; {1, 2, 3}), in other words, the ships are common knowledge, and C len<sub>j</sub> ship<sub>i</sub>, where j is the length of the ship i, in other words, the lengths of the ships are common knowledge. These will act like axioms in this system. <br />
 The game also involves the sinking of the ships. Looking at it practically, a ship sinks once all of the slots it takes are hit. Since we've modelled hits as knowledge about ships being in a slot or not, we can model a ship sinking as its position becoming common knowledge. As such, we need a separate way to mark knowledge about the positions of the ships. So we define K<sub>i</sub> pos ship<sub>ij</sub>, where i is the number of the agent (i &isin; {1, 2}) and j is the number of the ship (j &isin; {1,2,3}).<br />
-Because of the previous definition and the fact that each player knows where their ships are, we get K<sub>1</sub> pos ship<sub>11</sub>, K<sub>1</sub> pos ship<sub>12</sub>, K<sub>1</sub> pos ship<sub>13</sub>, K<sub>2</sub> pos ship<sub>21</sub>, K<sub>2</sub> pos ship<sub>22</sub> and K<sub>2</sub> pos ship<sub>23</sub>. <br />
+Because of the previous definition and the fact that each player knows where their ships are, we get: <br />
+K<sub>1</sub> pos ship<sub>11</sub>, K<sub>1</sub> pos ship<sub>12</sub>, K<sub>1</sub> pos ship<sub>13</sub>, K<sub>2</sub> pos ship<sub>21</sub>, K<sub>2</sub> pos ship<sub>22</sub> and K<sub>2</sub> pos ship<sub>23</sub>. <br />
 Upon the position of all ships of one player becoming common knowledge, it leads to the board becoming common knowledge, because now all of the empty positions are common knowledge as well. In an epistemic logic form, this would mean that:<br />
 (C pos ship<sub>11</sub> &and; C pos ship<sub>12</sub> &and; C pos ship<sub>13</sub>) &rarr; C B<sub>1</sub> &or; (C pos ship<sub>21</sub> &and; C pos ship<sub>22</sub> &and; C pos ship<sub>23</sub>) &rarr; C B<sub>2</sub>.
 
@@ -91,4 +92,4 @@ To specify one more time, once all three ships of at least one player become com
 <embed src="Logical_Aspects_of_Multi_Agent_Systems_Project_Example_Playthrough.pdf" width="800px" height="2100px" />
 
 # Discussion
-The idea of modelling the game of Battleships can lead to a multitude of avenues for future research. An example of this would be analyzing the game, but from a game theory point of view, focusing on potential ways of optimization gameplay. Another avenue of research would be attempting to model a well-known, harder version of the game known as "Salvo Battleships". In that version of the game, each turn each player attacks a number of slots equal to their number of unsunk ships in a "salvo" instead of attacking one slot at a time. The opponent will only tell them how many out of those attacks were hits and leaves it to them to piece the rest of the information together. Of course, the players still need to announce when a ship was sunk. Obviously, this would be significantly harder to model and could lead to interesting behaviours in and of itself. Alternatively, future researchers could attempt to make additional rules, for example, ships could only be placed vertically, or remove rules, for example, they could remove the announcement of a hit, but keep the announcement of a ship sinking, which could result in interesting behaviour once more.
+The idea of modelling the game of Battleship can lead to a multitude of avenues for future research. An example of this would be analyzing the game, but from a game theory point of view, focusing on potential ways of optimization gameplay. Another avenue of research would be attempting to model a well-known, harder version of the game known as "Salvo Battleship". In that version of the game, each turn each player attacks a number of slots equal to their number of unsunk ships in a "salvo" instead of attacking one slot at a time. The opponent will only tell them how many out of those attacks were hits and leaves it to them to piece the rest of the information together. Of course, the players still need to announce when a ship was sunk. Obviously, this would be significantly harder to model and could lead to interesting behaviours in and of itself. Alternatively, future researchers could attempt to make additional rules, for example, ships could only be placed vertically, or remove rules, for example, they could remove the announcement of a hit, but keep the announcement of a ship sinking, which could result in interesting behaviour once more.
