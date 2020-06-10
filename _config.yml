@@ -4,5 +4,6 @@ url: "https://kaeru4343.github.io/LAMAS_2020Project/" # the base hostname & prot
 author: Catalin Flaviu Berki & Kenichi Furusawa #Site author name
 email: c.f.catalin.flaviu@student.rug.nl & k.furusawa@student.rug.nl  #Site author email
 keywords: "epistemic logic" #Site common keywords
+header-heading-color: black
 #home-repo: "https://github.com/kaeru4343/LAMAS_2020Project" #Site repository
 theme: jekyll-theme-cayman
