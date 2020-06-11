@@ -12,7 +12,7 @@ The game created a multitude of spin-offs in various formats, including electron
 For the sake of simplicity, we will be using the game's default rules and an abridged version of its components in our attempt to model the game in an epistemic logic system.
 
 # Rules and Components
-(./rulesComponents.html)
+[Link](./rulesComponents.html)
 As stated before, this is a game for two players.<br />
 Each player has a grid of 10x10 that only they can see, pegs to mark an opponent's hits and misses and a number of ships of varying lengths and 1 width.<br />
 Various versions of the game have a different numbers of ships, but the default version has:
