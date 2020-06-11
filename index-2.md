@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Rules and Components
+theme: jekyll-theme-cayman
 ---
 
-## Rules and Components
+# Rules and Components
 
 As stated before, this is a game for two players.<br />
 Each player has a grid of 10x10 that only they can see, pegs to mark an opponent's hits and misses and a number of ships of varying lengths and 1 width.<br />
