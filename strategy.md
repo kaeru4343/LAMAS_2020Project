@@ -9,7 +9,7 @@ Formally, edge &isin; {(A,6),(A,1),(F,1),(F,6)} and K<sub>i</sub> p<sub>Ship</su
 
 <b> Attacking </b>
 When attacking/announcing the grid to find out about the other agents posision, attacking on the edges are only prefered if and only the agent i knows that agent i will know that there is a ship, K<sub>i</sub>K<sub>i</sub>p<sub>Ship</sub>edge. This is because from the positioning strategy, agents know that it is unlikely for a ship positioned on the edge. 
-Also &not;p<sub>Ship</sub>edge can be known by attacking two side of a edge. Attacking of two side of edge is preferred since this can leads to kwonwing three posisiton in 2 steps. For example, in two step agent i models, K<sub>i</sub>&not;p<sub>Ship</sub>vertical_edge &and; K<sub>i</sub>&not;p<sub>Ship</sub>horizonal_edge &rarr; K<sub>i</sub>&not;p<sub>Ship</sub>edge. 
-
+Also &not;p<sub>Ship</sub>edge can be known by attacking two side of a edge. Attacking of two side of edge is preferred since this can leads to kwonwing three posisiton in 2 steps. For example, in two step agent i models, K<sub>i</sub>&not;p<sub>Ship</sub>vertical_edge &and; K<sub>i</sub>&not;p<sub>Ship</sub>horizonal_edge &rarr; K<sub>i</sub>&not;p<sub>Ship</sub>edge. Therefore, information gain is more efficient in the best case.  
+If it is not base case, then infromation gain is as good as the attacking other side positions. 
 
 
