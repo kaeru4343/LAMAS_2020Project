@@ -11,7 +11,8 @@ Battleship is a strategy type guessing game for two players that originally came
 The game created a multitude of spin-offs in various formats, including electronic versions, video games and even phone apps. Every version generally respects the core idea of the game, but will sometimes deviate in execution or rules.<br />
 For the sake of simplicity, we will be using the game's default rules and an abridged version of its components in our attempt to model the game in an epistemic logic system.
 
-# Rules and Components 
+# Rules and Components
+<a href="/rulesComponents.md">Rules and Components <a/>
 As stated before, this is a game for two players.<br />
 Each player has a grid of 10x10 that only they can see, pegs to mark an opponent's hits and misses and a number of ships of varying lengths and 1 width.<br />
 Various versions of the game have a different numbers of ships, but the default version has:
@@ -35,15 +36,15 @@ The rounds keep repeating until the ships of either one of the players, or of bo
 This concludes the rules of the game.
 
 # Epistemic Logic Conversion
-Starting from the two competing players, it is clear that we can simply transform them into agents and as such, we will have *A<sub>1</sub> and A<sub>2</sub>.<br />*
-From there, each player has a board they know, so we have *B<sub>1</sub>* for the board of agent 1 and *B<sub>2</sub>* for the board of the second player.<br /> 
-Since they know their own boards we have *K<sub>1</sub>B<sub>1</sub> *and *K<sub>2</sub>B<sub>2</sub>*, which roughly translates to agent 1 knows board 1 and agent 2 knows board 2.<br />
-Thus, the game ends when *C B<sub>1</sub>* and/or *C B<sub>2</sub>*, which roughly translated to board 1 is common knowledge and/or board 2 is common knowledge, or, in other words, it ends when the board of at least one player becomes common knowledge.<br /> 
+Starting from the two competing players, it is clear that we can simply transform them into agents and as such, we will have A<sub>1</sub> and A<sub>2</sub>.<br />
+From there, each player has a board they know, so we have B<sub>1</sub> for the board of agent 1 and B<sub>2</sub> for the board of the second player.<br /> 
+Since they know their own boards we have K<sub>1</sub>B<sub>1</sub> *and K<sub>2</sub>B<sub>2</sub>, which roughly translates to agent 1 knows board 1 and agent 2 knows board 2.<br />
+Thus, the game ends when C B<sub>1</sub> and/or C B<sub>2</sub>, which roughly translated to board 1 is common knowledge and/or board 2 is common knowledge, or, in other words, it ends when the board of at least one player becomes common knowledge.<br /> 
 A board becomes common knowledge when the status of all of the slots on it are common knowledge. The status of the slots is that there either is a ship on the slot or there is no ship on the slot.
 
-To transform this in epistemic logic, if *B<sub>m</sub> sh<sub>ij</sub>* means that there is a ship at position ij on board m, then we have *&not; B<sub>m</sub> sh<sub>ij</sub>* which means that there isn't a ship at position ij on board m, where, in our case, i &isin; {A, B, C, D, E, F}, j &isin; {1, 2, 3, 4, 5, 6} and m &isin; {1,2}.<br />
-Since *K<sub>1</sub>B<sub>1</sub>* and *K<sub>2</sub>B<sub>2</sub>*, then *K<sub>1</sub> B<sub>1</sub>sh<sub>ij</sub>* and* K<sub>2</sub> B<sub>2</sub>sh<sub>ij</sub> *where ij are the slots that ships occupy and *K<sub>1</sub> &not; B<sub>1</sub> sh<sub>ij</sub>* and *K<sub>2</sub>&not; B<sub>2</sub> sh<sub>ij</sub>* where ij are the slots that are empty.<br />
-From the previous fact and the fact that the game ends when at least one of the boards becomes common knowledge, we can re-write the condition as being *C B<sub>m</sub>sh<sub>ij</sub>* where m is either of the boards and ij are the slots where there are ships and *C &not; B<sub>n</sub> sh<sub>ij</sub>* where n is the same as m and kl are the slots that are empty.<br />
+To transform this in epistemic logic, if B<sub>m</sub> sh<sub>ij</sub> means that there is a ship at position ij on board m, then we have &not; B<sub>m</sub> sh<sub>ij</sub> which means that there isn't a ship at position ij on board m, where, in our case, i &isin; {A, B, C, D, E, F}, j &isin; {1, 2, 3, 4, 5, 6} and m &isin; {1,2}.<br />
+Since K<sub>1</sub>B<sub>1</sub> and K<sub>2</sub>B<sub>2</sub>, then K<sub>1</sub> B<sub>1</sub>sh<sub>ij</sub> and K<sub>2</sub> B<sub>2</sub>sh<sub>ij</sub> where ij are the slots that ships occupy and K<sub>1</sub> &not; B<sub>1</sub> sh<sub>ij</sub> and K<sub>2</sub>&not; B<sub>2</sub> sh<sub>ij</sub>* where ij are the slots that are empty.<br />
+From the previous fact and the fact that the game ends when at least one of the boards becomes common knowledge, we can re-write the condition as being *C B<sub>m</sub>sh<sub>ij</sub>* where m is either of the boards and ij are the slots where there are ships and C &not; B<sub>n</sub> sh<sub>ij</sub> where n is the same as m and kl are the slots that are empty.<br />
 
 That covers the part about the board and the location of the ships, but there is another parallel set of knowledge that needs to be taken into account and that is knowledge about the ships themselves.<br />
 In general, it is common knowledge what kinds of ships each player has and their length and, to be more specific, in our case, it is common knowledge that each player has 1 ship of length 4, 1 ship of length 3 and 1 ship of length 2.
