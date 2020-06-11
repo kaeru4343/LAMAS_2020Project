@@ -24,7 +24,7 @@ In summary, &#x2112;<sub>KC</sub><sup>stat</sup>(A,P) is defined as a union of t
 One example of a game with play through is done here [Link](./example_play.html). 
 
 # Strategies  
-In order for an agent to win the game, one way is to place the ship in such a way that it is hard to other agents to limits model. Or find out about the other agents position faster than the other agent.  
+In order for an agent to win the game, one way is to place the ship in such a way that it is hard to other agents to limits model. Or find out about the other agents position faster than the other agent [Link](./strategy.html).
 
 
 # Discussion
