@@ -1,3 +1,8 @@
+---
+layout: default
+title: Rules and Components
+theme: jekyll-theme-cayman
+---
 # Variation of the game 
 Here we consider a variation of the game. The varinat is that when annoucing the posisitn for an attack, the agents needs to announce its own grid state together with the attack. so the announcement is "&not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) &and;  p<sub>Ship</sub>(x,y,b)" or "&not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) &and; &not; p<sub>Ship</sub>(x,y,b)", which translate to "I do not know if a ship is at (x,y,b) and I know that if a ship at (x,y,a)". Then the other agent must reply with the same actions as done before in the normal game. 
 Since the agents want to avoid its own ship position to become common knowledge, when attacking, the agents want to expolit the other agents position and hide its own position.  

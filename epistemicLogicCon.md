@@ -1,3 +1,9 @@
+---
+layout: default
+title: Rules and Components
+theme: jekyll-theme-cayman
+---
+
 # Epistemic Logic Conversion
 Starting from the two competing players, it is clear that we can simply transform them into agents and as such, we will have A<sub>1</sub> and A<sub>2</sub>.<br />
 From there, each player has a board they know, so we have B<sub>1</sub> for the board of agent 1 and B<sub>2</sub> for the board of the second player.<br /> 
