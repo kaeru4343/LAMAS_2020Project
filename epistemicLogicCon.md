@@ -50,3 +50,5 @@ Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) by applying
 Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship<sub>i,j</sub></sub> by applying the second reply announcement, we get M', K<sub>j</sub> p<sub>Ship</sub>(x<sub>1</sub>,y<sub>1</sub>,b) &and; ... &and; K<sub>j</sub> p<sub>Ship</sub>(x<sub>n</sub>,y<sub>n</sub>,b) &rarr; K<sub>j</sub> p<sub>Ship<sub>j,k</sub></sub> &#8871; C p<sub>Ship<sub>j,k</sub></sub>. <br />
 There are a few more actions agents can take, but to showcase them properly, we need to go in more detail. All of these actions can be seen in the example playthrough that follows [Link](./example_play.html). <br />
 To specify one more time, once all three ships of at least one player become common knowledge, the game ends.
+
+[back](./)
