@@ -9,9 +9,8 @@ Battleship is a strategy type guessing game for two players that originally came
 
 The game created a multitude of spin-offs in various formats, including electronic versions, video games and even phone apps. Every version generally respects the core idea of the game, but will sometimes deviate in execution or rules.<br />
 For the sake of simplicity, we will be using the game's default rules and an abridged version of its components in our attempt to model the game in an epistemic logic system.
-
-# <a href="/index-2.md">Rules and Components <a/>
-
+---
+# Rules and Components 
 As stated before, this is a game for two players.<br />
 Each player has a grid of 10x10 that only they can see, pegs to mark an opponent's hits and misses and a number of ships of varying lengths and 1 width.<br />
 Various versions of the game have a different numbers of ships, but the default version has:
@@ -86,14 +85,14 @@ Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) by applying
 Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship<sub>i,j</sub></sub> by applying the second reply announcement, we get M', K<sub>j</sub> p<sub>Ship</sub>(x<sub>1</sub>,y<sub>1</sub>,b) &and; ... &and; K<sub>j</sub> p<sub>Ship</sub>(x<sub>n</sub>,y<sub>n</sub>,b) &rarr; K<sub>j</sub> p<sub>Ship<sub>j,k</sub></sub> &#8871; C p<sub>Ship<sub>j,k</sub></sub>. <br />
 There are a few more actions agents can take, but to showcase them properly, we need to go in more detail. All of these actions can be seen in the example playthrough that follows. <br />
 To specify one more time, once all three ships of at least one player become common knowledge, the game ends.
-
+---
 # Example of an Epistemic Logic Playthrough
-
 <embed src="Logical_Aspects_of_Multi_Agent_Systems_Project_Example_Playthrough.pdf" width="800px" height="2100px" />
 
+---
 # Discussion
 The idea of modelling the game of Battleship can lead to a multitude of avenues for future research. An example of this would be analyzing the game, but from a game theory point of view, focusing on potential ways of optimization gameplay. Another avenue of research would be attempting to model a well-known, harder version of the game known as "Salvo Battleship". In that version of the game, each turn each player attacks a number of slots equal to their number of unsunk ships in a "salvo" instead of attacking one slot at a time. The opponent will only tell them how many out of those attacks were hits and leaves it to them to piece the rest of the information together. Of course, the players still need to announce when a ship was sunk. Obviously, this would be significantly harder to model and could lead to interesting behaviours in and of itself. Alternatively, future researchers could attempt to make additional rules, for example, ships could only be placed vertically, or remove rules, for example, they could remove the announcement of a hit, but keep the announcement of a ship sinking, which could result in interesting behaviour once more.
-
+---
 # Variation of the game 
 Here we consider a variation of the game. The varinat is that when annoucing the posisitn for an attack, the agents needs to announce its own grid state together with the attack. so the announcement is "&not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) &and;  p<sub>Ship</sub>(x,y,b)" or "&not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) &and; &not; p<sub>Ship</sub>(x,y,b)", which translate to "I do not know if a ship is at (x,y,b) and I know that if a ship at (x,y,a)". Then the other agent must reply with the same actions as done before in the normal game. 
 Since the agents want to avoid its own ship position to become common knowledge, when attacking, the agents want to expolit the other agents position and hide its own position.  
