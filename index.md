@@ -10,7 +10,7 @@ Battleship is a strategy type guessing game for two players that originally came
 The game created a multitude of spin-offs in various formats, including electronic versions, video games and even phone apps. Every version generally respects the core idea of the game, but will sometimes deviate in execution or rules.<br />
 For the sake of simplicity, we will be using the game's default rules and an abridged version of its components in our attempt to model the game in an epistemic logic system.
 
-# <a href="/rulesComponents.md">Rules and Components <a/>
+# <a href="/RulesAndComponents">Rules and Components <a/>
 
 As stated before, this is a game for two players.<br />
 Each player has a grid of 10x10 that only they can see, pegs to mark an opponent's hits and misses and a number of ships of varying lengths and 1 width.<br />
