@@ -13,7 +13,7 @@ For the sake of simplicity, we will be using the game's default rules and an abr
 # Rules and Components
 The rules of the game are explained here [Link](./rulesComponents.html).<br/>
 
-In summary, there are three ships with diffreren shape and they are placed on 6x6 board without comminucating the posistion bewteen the agents and the task is find out where the ships are on the other agent's board. 
+In summary, there are three ships with diffreren shape and they are placed on 6x6 board without comminucating the positions bewteen the agents and the task is to find out where the ships are on the other agent's board. 
 
 # Epistemic Logic Conversion
 Here we shows that epistemic logic can be used to model agents knowledge in the game [Link](./epistemicLogicCon.html)<br/>

@@ -13,3 +13,4 @@ Also &not;p<sub>Ship</sub>edge can be known by attacking two side of a edge. Att
 If it is not base case, then infromation gain is as good as the attacking other side positions. 
 
 
+[back](./)
