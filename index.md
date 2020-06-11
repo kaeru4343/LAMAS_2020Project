@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Battleship - An Epistemic Logic Representation"
-nnav_order: 4
+nav_order: 4
 ---
 
 # Introduction
