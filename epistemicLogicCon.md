@@ -1,44 +1,5 @@
----
-layout: default
-title: "Battleship - An Epistemic Logic Representation"
-nav_order: 4
----
-
-# Introduction
-
-Battleship is a strategy type guessing game for two players that originally came out as pen and paper game in the 1930s and, later, in 1973, as a plastic board game.
-
-The game created a multitude of spin-offs in various formats, including electronic versions, video games and even phone apps. Every version generally respects the core idea of the game, but will sometimes deviate in execution or rules.<br />
-For the sake of simplicity, we will be using the game's default rules and an abridged version of its components in our attempt to model the game in an epistemic logic system.
-
-# Rules and Components
-The rules of the game are formulaized here [Link](./rulesComponents.html). In summary, the setup, ships and basic operations that are common knowledge for all agents all the time. 
-
-<!-- As stated before, this is a game for two players.<br />
-Each player has a grid of 10x10 that only they can see, pegs to mark an opponent's hits and misses and a number of ships of varying lengths and 1 width.<br />
-Various versions of the game have a different numbers of ships, but the default version has:
-*   1 Carrier, which has length 5, 
-*   1 Battleship, which has length 4, 
-*   1 Cruiser, which has length 3, 
-*   1 Submarine, which has length 3 and 
-*   1 Destroyer, which has length 2. 
-
-For our abridged version, we will be using a 6x6 grid with the following ships:
-*   1 Battleship, 
-*   1 Cruiser and 
-*   1 Destroyer.
-
-The game is played as follows:
-
-At the start, each party places down their ships without the knowledge of the opponent. They can place their ships wherever they want on their grid as long as the ships are either vertical or horizontal and they do not intersect other ships.<br />
-Afterwards, the first round starts. During a round, the players each take a turn to attack a slot on the opponent's board. During an attack, they specify the coordinates they want to check, for example A-5(first row, fifth column), and after this announcement, the opposing player has to announce if the attempt was a hit or a miss and mark it on their grid accordingly.<br />
-Then the other player does the same. The round ends and the next round begins. If all of the slots that a ship spans are hit, then the ship is considered to have "sunk" and the player to whom that ship belonged must announce that that particular kind of ship has been sunk.<br />
-The rounds keep repeating until the ships of either one of the players, or of both (as the round ends after both players have taken a shot, this is possible), have been sunk.<br />
-This concludes the rules of the game. -->
-
 # Epistemic Logic Conversion
-[Link](./epistemicLogicCon.html)
-<!-- Starting from the two competing players, it is clear that we can simply transform them into agents and as such, we will have A<sub>1</sub> and A<sub>2</sub>.<br />
+Starting from the two competing players, it is clear that we can simply transform them into agents and as such, we will have A<sub>1</sub> and A<sub>2</sub>.<br />
 From there, each player has a board they know, so we have B<sub>1</sub> for the board of agent 1 and B<sub>2</sub> for the board of the second player.<br /> 
 Since they know their own boards we have K<sub>1</sub>B<sub>1</sub> *and K<sub>2</sub>B<sub>2</sub>, which roughly translates to agent 1 knows board 1 and agent 2 knows board 2.<br />
 Thus, the game ends when C B<sub>1</sub> and/or C B<sub>2</sub>, which roughly translated to board 1 is common knowledge and/or board 2 is common knowledge, or, in other words, it ends when the board of at least one player becomes common knowledge.<br /> 
@@ -88,19 +49,4 @@ The game consists of rounds and each round consists of one action from each agen
 Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) by applying the first reply announcement, we get M', K<sub>j</sub> p<sub>Ship</sub>(x,y,b) &#8871; C p<sub>Ship</sub>(x,y,b). That is the scenario when a ship is there. The same is true if a ship is not there, only for the negation of p<sub>Ship</sub>(x,y,b) instead.<br />
 Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship<sub>i,j</sub></sub> by applying the second reply announcement, we get M', K<sub>j</sub> p<sub>Ship</sub>(x<sub>1</sub>,y<sub>1</sub>,b) &and; ... &and; K<sub>j</sub> p<sub>Ship</sub>(x<sub>n</sub>,y<sub>n</sub>,b) &rarr; K<sub>j</sub> p<sub>Ship<sub>j,k</sub></sub> &#8871; C p<sub>Ship<sub>j,k</sub></sub>. <br />
 There are a few more actions agents can take, but to showcase them properly, we need to go in more detail. All of these actions can be seen in the example playthrough that follows. <br />
-To specify one more time, once all three ships of at least one player become common knowledge, the game ends. -->
-
-# Example of an Epistemic Logic Playthrough
-<embed src="Logical_Aspects_of_Multi_Agent_Systems_Project_Example_Playthrough.pdf" width="800px" height="2100px" />
-
-# Discussion
-The idea of modelling the game of Battleship can lead to a multitude of avenues for future research. An example of this would be analyzing the game, but from a game theory point of view, focusing on potential ways of optimization gameplay. Another avenue of research would be attempting to model a well-known, harder version of the game known as "Salvo Battleship". In that version of the game, each turn each player attacks a number of slots equal to their number of unsunk ships in a "salvo" instead of attacking one slot at a time. The opponent will only tell them how many out of those attacks were hits and leaves it to them to piece the rest of the information together. Of course, the players still need to announce when a ship was sunk. Obviously, this would be significantly harder to model and could lead to interesting behaviours in and of itself. Alternatively, future researchers could attempt to make additional rules, for example, ships could only be placed vertically, or remove rules, for example, they could remove the announcement of a hit, but keep the announcement of a ship sinking, which could result in interesting behaviour once more.
-
-# Variation of the game 
-[Link](./Variant.html)
-<!-- Here we consider a variation of the game. The varinat is that when annoucing the posisitn for an attack, the agents needs to announce its own grid state together with the attack. so the announcement is "&not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) &and;  p<sub>Ship</sub>(x,y,b)" or "&not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) &and; &not; p<sub>Ship</sub>(x,y,b)", which translate to "I do not know if a ship is at (x,y,b) and I know that if a ship at (x,y,a)". Then the other agent must reply with the same actions as done before in the normal game. 
-Since the agents want to avoid its own ship position to become common knowledge, when attacking, the agents want to expolit the other agents position and hide its own position.  
-Then the agents needs make less annoucment which exploits their own position of the ship, p<sub>Ship</sub>(x,y,b). Futhermore, when one position of the ship is known to the other agents, K<sub>i</sub> p<sub>Ship</sub>(x,y,b) and from the common knowledge of the rules, the agent want to avoid attacking position on the surrondings of known position. This avoidane behavior is common knoweldge amongs the agents. 
- -->
-
-
+To specify one more time, once all three ships of at least one player become common knowledge, the game ends.
