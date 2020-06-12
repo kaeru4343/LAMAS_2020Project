@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Rules and Components
+title: "Battleship <br/> An Epistemic Logic Representation"
+description: "Epistemic Logic Conversion"
 theme: jekyll-theme-cayman
 ---
 
@@ -57,4 +58,4 @@ Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship<sub>i,j</sub></sub> by a
 There are a few more actions agents can take, but to showcase them properly, we need to go in more detail. All of these actions can be seen in the example playthrough that follows [Link](./example_play.html). <br />
 To specify one more time, once all three ships of at least one player become common knowledge, the game ends.
 
-[back](./)
+[Back](./)

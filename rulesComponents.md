@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Rules and Components
+title: "Battleship <br/> An Epistemic Logic Representation"
+description: "Rules and Components"
 theme: jekyll-theme-cayman
 ---
 
@@ -29,4 +30,4 @@ The game is played as follows:
 
 This concludes the rules of the game.
 
-[back](./)
+[Back](./)
