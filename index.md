@@ -3,14 +3,6 @@ layout: default
 title: "Battleship <br/> An Epistemic Logic Representation"
 description: "By Catalin Flaviu Berki & Kenichi Furusawa"
 ---
-<ul>
-  <li>[Home](./)</li>
-  <li>[Rules and Components](./rulesComponents.html)</li>
-  <li>[Epistemic Logic Conversion](./epistemicLogicCon.html)</li>
-  <li>[Playthrough Example](./example_play.html)</li>
-  <li>[Strategies](./strategy.html)</li>
-  <li>[Game Variant](./Variant.html)</li>
-</ul>
 
 # Introduction
 
