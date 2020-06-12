@@ -20,47 +20,53 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 	
 	<style>
-	ul.topnav {
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	  background-color: #333;
+	.navbar {
+	  width: 100%;
+	  background-color: #555;
+	  overflow: auto;
 	}
-
-	ul.topnav li {float: left;}
-
-	ul.topnav li a {
-	  display: block;
+	.navbar a {
+	  float: left;
+	  padding: 12px;
 	  color: white;
-	  text-align: center;
-	  padding: 14px 16px;
 	  text-decoration: none;
+	  font-size: 17px;
+	  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+	  text-align: center; /* If you want the text to be centered */
 	}
 
-	ul.topnav li a:hover:not(.active) {background-color: #111;}
+	/* Add a background color on mouse-over */
+	.navbar a:hover {
+	  background-color: #000;
+	}
 
-	ul.topnav li a.active {background-color: #4CAF50;}
+	/* Style the current/active link */
+	.navbar a.active {
+	  background-color: #4CAF50;
+	}
 
-	ul.topnav li.right {float: right;}
-
-	@media screen and (max-width: 600px) {
-	  ul.topnav li.right, 
-	  ul.topnav li {float: none;}
+	/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+	@media screen and (max-width: 500px) {
+	  .navbar a {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: left; /* If you want the text to be left-aligned on small screens */
+	  }
 	}
 	</style>
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 	
-	<ul class="topnav">
-	  <li><a href="{{site.github}}" + "/index.html">Home</a></li>
-	  <li><a href="{{site.github}}" + "/rulesComponents.html">Rules and Components</a></li>
-	  <li><a href="{{site.github}}" + "/epistemicLogicCon.html">Epistemic Logic Conversion</a></li>
-	  <li><a href="{{site.github}}" + "/example_play.html">Playthrough Example</a></li>
-	  <li><a href="{{site.github}}" + "/strategy.html">Strategies</a></li>
-	  <li><a href="{{site.github}}" + "/variant.html">Game Variant</a></li>
-	</ul>
+	<div class="topnav">
+	  <a href="/">Home</a>
+	  <a href="/rulesComponents.html">Rules</a>
+	  <a href="/epistemicLogicCon.html">Conversion</a>
+	  <a href="/example_play.html">Playthrough</a>
+	  <a href="/strategy.html">Strategies</a>
+	  <a href="/variant.html">Variant</a>
+	</div>
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
