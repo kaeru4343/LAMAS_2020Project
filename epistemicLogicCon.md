@@ -33,7 +33,9 @@ K<sub>1</sub> pos ship<sub>11</sub>, K<sub>1</sub> pos ship<sub>12</sub>, K<sub>
 
 Upon the position of all ships of one player becoming common knowledge, it leads to the board becoming common knowledge, because now all of the empty positions are common knowledge as well. In an epistemic logic form, this would mean that:
 
-(C pos ship<sub>11</sub> &and; C pos ship<sub>12</sub> &and; C pos ship<sub>13</sub>) &rarr; C B<sub>1</sub> &or; (C pos ship<sub>21</sub> &and; C pos ship<sub>22</sub> &and; C pos ship<sub>23</sub>) &rarr; C B<sub>2</sub>.
+(C pos ship<sub>11</sub> &and; C pos ship<sub>12</sub> &and; C pos ship<sub>13</sub>) &rarr; C B<sub>1</sub> <br/>
+&or;<br/>
+(C pos ship<sub>21</sub> &and; C pos ship<sub>22</sub> &and; C pos ship<sub>23</sub>) &rarr; C B<sub>2</sub>.
 
 The last thing left to translate into epistemic logic, is the way the game is played. And this could be done as a series of announcements. When one player wants to "attack" a position, they can simply state that they do not know the status of a certain slot. In other words, it can be translated to &not;K<sub>l</sub> B<sub>m</sub> sh<sub>ij</sub>, where l is the attacking agent, m is the board of the opponent and ij is the position in question.
 
