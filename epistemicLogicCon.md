@@ -71,7 +71,7 @@ The game consists of rounds and each round consists of one action from each agen
 
 Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship</sub>(x,y,b) by applying the first reply announcement, we get M' &#8871; [K<sub>j</sub> p<sub>Ship</sub>(x,y,b)] C p<sub>Ship</sub>(x,y,b). That is the scenario when a ship is there. The same is true if a ship is not there, only for the negation of p<sub>Ship</sub>(x,y,b) instead.
 
-Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship<sub>i,j</sub></sub> by applying the second reply announcement, we get M' &#8871; <K<sub>j</sub> p<sub>Ship</sub>(x<sub>1</sub>,y<sub>1</sub>,b) &and; ... &and; K<sub>j</sub> p<sub>Ship</sub>(x<sub>n</sub>,y<sub>n</sub>,b) &rarr; K<sub>j</sub> p<sub>Ship<sub>j,k</sub></sub>> C p<sub>Ship<sub>j,k</sub></sub>.
+Assuming we had M &#8871; &not;K<sub>i</sub> p<sub>Ship<sub>i,j</sub></sub> by applying the second reply announcement, we get M' &#8871; [K<sub>j</sub> p<sub>Ship</sub>(x<sub>1</sub>,y<sub>1</sub>,b) &and; ... &and; K<sub>j</sub> p<sub>Ship</sub>(x<sub>n</sub>,y<sub>n</sub>,b) &rarr; K<sub>j</sub> p<sub>Ship<sub>j,k</sub></sub>] C p<sub>Ship<sub>j,k</sub></sub>.
 
 There are a few more actions agents can take, but to showcase them properly, we need to go in more detail. All of these actions can be seen in the example playthrough that follows [Link](./example_play.html).
 
